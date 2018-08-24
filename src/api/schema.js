@@ -23,7 +23,7 @@ const typeDefs = `
     }
 
     type Mutation {
-        CreateUser(input: UserInput): User
+        CreateUser(input: UserInput): Boolean
     }
 `
 

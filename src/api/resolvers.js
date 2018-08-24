@@ -11,13 +11,11 @@ module.exports = {
     },
     Mutation: {
         async CreateUser(_, { input }) {
-            const res = await db('users').insert({
+            return await db('users').insert({
                 name: input.name,
                 email: input.name,
                 password: input.password
             })
-
-            return res[rowCount];
         }
     }
 }

@@ -1,5 +1,7 @@
 // Update with your config settings.
 
+const { password } = require('../.env')
+
 module.exports = {
 
     client: 'postgresql',
@@ -8,7 +10,7 @@ module.exports = {
       host: "ec2-54-235-242-63.compute-1.amazonaws.com",
       database: "dcemdpp692dqr9",
       user: "woxwrwwkpkzlss",
-      password: "e52ec62d2d213025cbaec0a5d80bb48e24120515840e8b38e2fcc6bb399411ba",
+      password: password,
     },
     pool: {
       min: 2,
